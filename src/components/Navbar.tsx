@@ -16,11 +16,11 @@ const Navbar = () => {
             const data = await res.json();
             console.log(data);
   
-            const { Jellyfin, JellySeerr, invite } = data
+            const { Jellyfin, JellySeerr, Invite } = data
             const serviceData: ServiceProps = {
                 Jellyfin,
                 JellySeerr,
-                invite,
+                Invite,
             }
 
             console.log(serviceData)
@@ -41,7 +41,7 @@ const Navbar = () => {
             <>
             <Link className={classes.menuitem} to={service.Jellyfin}>Jellyfin</Link>
             <Link className={classes.menuitem} to={service.JellySeerr}>Jellyseerr</Link>
-            <Link className={classes.menuitem} to={service.invite}>Criar Conta</Link></>
+            <Link className={classes.menuitem} to={service.Invite}>Criar Conta</Link></>
             }
         </div>
     </nav>

@@ -17,11 +17,11 @@ const Service = () => {
             const data = await res.json();
             console.log(data);
   
-            const { Jellyfin, JellySeerr, invite } = data
+            const { Jellyfin, JellySeerr, Invite } = data
             const serviceData: ServiceProps = {
                 Jellyfin,
                 JellySeerr,
-                invite,
+                Invite,
             }
   
             setService(serviceData)
@@ -56,7 +56,7 @@ const Service = () => {
                         seja adicionado em nosso serviço.</p>
                 </li>
                 <li>
-                    <Link to={service.invite} target= "_blank">
+                    <Link to={service.Invite} target= "_blank">
                     <img src="https://cdn-icons-png.flaticon.com/512/1063/1063809.png" alt="Clique para acessar: Criar Conta" />
                     <p className={classes.title}>Criar Conta</p>
                     </Link>
