@@ -11,7 +11,7 @@ const Service = () => {
     useEffect(() => {
     
       const loadData = async () => {
-        const apiURL = import.meta.env.VITE_API;
+        const apiURL = import.meta.env.VITE_API || process.env.VITE_URL;
         console.log(apiURL);
             const res = await fetch(apiURL);
             const data = await res.json();
@@ -23,8 +23,6 @@ const Service = () => {
                 JellySeerr,
                 invite,
             }
-
-            console.log(serviceData)
   
             setService(serviceData)
           };
