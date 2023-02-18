@@ -13,7 +13,7 @@ const Service = () => {
       const loadData = async () => {
         const apiURL = import.meta.env.VITE_API || process.env.VITE_API;
         console.log(apiURL);
-            const res = await fetch(apiURL);
+            const res = await fetch(apiURL as string);
             const data = await res.json();
             console.log(data);
   
