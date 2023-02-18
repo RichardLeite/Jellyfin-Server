@@ -1,0 +1,29 @@
+:root {
+    --dark-bg: #00040a;
+    --dark-container: #0d1117;
+    --dark-content: #161b22;
+    --blue-active: #00749b;
+    --blue-bg: #000b25;
+    --blue-content: #172138;
+    --white: #ffffff;
+  }
+
+.navbar{
+    margin: 0;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #172138;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+.menu{
+    display: flex;
+}
+
+.menuitem {
+    margin: 0 0.5rem;
+}
+
