@@ -11,7 +11,7 @@ const Service = () => {
     useEffect(() => {
     
       const loadData = async () => {
-        const apiURL = import.meta.env.VITE_API || process.env.VITE_URL;
+        const apiURL = import.meta.env.VITE_API || process.env.VITE_API;
         console.log(apiURL);
             const res = await fetch(apiURL);
             const data = await res.json();
