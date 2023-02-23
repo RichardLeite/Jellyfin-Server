@@ -10,9 +10,9 @@ const Navbar = () => {
     useEffect(() => {
     
       const loadData = async () => {
-        const apiURL = import.meta.env.VITE_API;
+        const apiURL = import.meta.env.VITE_API || process.env.VITE_API;
         console.log(apiURL);
-            const res = await fetch(apiURL);
+            const res = await fetch(apiURL as string);
             const data = await res.json();
             console.log(data);
   
@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <nav className={classes.navbar}>
-        <Link to='/'>My Private Server</Link>
+        <Link to='/'>Richão Services</Link>
         <div className={classes.menu}>
             {service && 
             <>

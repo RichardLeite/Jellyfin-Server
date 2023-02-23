@@ -34,7 +34,6 @@ const Service = () => {
 
     return (
         <div>
-            {/* <Navbar/> */}
             <h1>Richão Services</h1>
             <div className={classes.service}>
 
