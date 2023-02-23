@@ -34,10 +34,13 @@ const Service = () => {
 
     return (
         <div>
-            <Navbar/>
+            {/* <Navbar/> */}
             <h1>Richão Services</h1>
             <div className={classes.service}>
-                <h3>Selecione um serviço abaixo:</h3>
+
+                <h1>OPS...</h1>
+                <h1>Nossos serviços estão Temporariamente em Manutenção! Volte novamente mais tarde</h1>
+                {/* <h3>Selecione um serviço abaixo:</h3>
                 {service && 
                 <ul className={classes.services}>
                 <li>
@@ -65,7 +68,7 @@ const Service = () => {
                 </li>
                 </ul>
                     }
-                <p>Observação: O serviço será aberto em uma nova aba!</p>
+                <p>Observação: O serviço será aberto em uma nova aba!</p> */}
             </div>
         </div>
     )
