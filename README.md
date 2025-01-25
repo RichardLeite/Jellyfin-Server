@@ -1,12 +1,12 @@
 # Jellyfin-Server
 
-Site básico para redirecionamento ao meu servidor Jellyfin, criado com [React](https://pt-br.reactjs.org/) e [TypeScript](https://www.typescriptlang.org/).
+Basic site to redirect to my Jellyfin server, created with [React](https://pt-br.reactjs.org/) and [TypeScript](https://www.typescriptlang.org/).
 
-Para instalar as dependências, execute o comando:
+To install the dependencies, run the command:
 #### `npm install`
 
-Para executar o projeto em modo de desenvolvimento, execute o comando:
+To run the project in development mode, run the command:
 #### `npm run dev`
 
-Para executar o projeto em modo de produção, execute o comando:
+To run the project in production mode, run the command:
 #### `npm start`
